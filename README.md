@@ -8,6 +8,8 @@ Great for planning birthdays, events, and more.
 
 Download now and always know your days!
 
+https://apps.apple.com/id/app/what-day/id6502677787
+
 developer : Pieter Yoshua Natanael
 
 
