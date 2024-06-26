@@ -10,7 +10,7 @@ Download now and always know your days!
 
 https://apps.apple.com/id/app/what-day/id6502677787
 
-developer : Pieter Yoshua Natanael
+developer : Pieter Yoshua Natanael & Jauza Akbar Krito
 
 
 Privacy Policy
