@@ -8,6 +8,7 @@
 import SwiftUI
 
 // Main view displaying the date picker and resulting day of the week
+
 struct ContentView: View {
     @State private var selectedYear = Calendar.current.component(.year, from: Date())
     @State private var selectedMonth = Calendar.current.component(.month, from: Date())
@@ -193,6 +194,11 @@ struct ShowExplainView: View {
                     
                     // App Cards for ads
                     VStack {
+                        
+                        Divider().background(Color.gray)
+                        AppCardView(imageName: "sos", appName: "SOS Light", appDescription: "SOS Light is designed to maximize the chances of getting help in emergency situations", appURL: "https://apps.apple.com/app/s0s-light/id6504213303")
+                        Divider().background(Color.gray)
+                        
                         Divider().background(Color.gray)
                         AppCardView(imageName: "bodycam", appName: "BODYCam", appDescription: "Record videos effortlessly and discreetly.", appURL: "https://apps.apple.com/id/app/b0dycam/id6496689003")
                         Divider().background(Color.gray)
