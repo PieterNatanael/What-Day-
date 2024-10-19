@@ -179,18 +179,18 @@ struct ShowExplainView: View {
                         Spacer()
                     }
                     // Ad image with link
-                    ZStack {
-                        Image("threedollar")
-                            .resizable()
-                            .aspectRatio(contentMode: .fill)
-                            .cornerRadius(25)
-                            .clipped()
-                            .onTapGesture {
-                                if let url = URL(string: "https://b33.biz/three-dollar/") {
-                                    UIApplication.shared.open(url)
-                                }
-                            }
-                    }
+//                    ZStack {
+//                        Image("threedollar")
+//                            .resizable()
+//                            .aspectRatio(contentMode: .fill)
+//                            .cornerRadius(25)
+//                            .clipped()
+//                            .onTapGesture {
+//                                if let url = URL(string: "https://b33.biz/three-dollar/") {
+//                                    UIApplication.shared.open(url)
+//                                }
+//                            }
+//                    }
                     
                     // App Cards for ads
                     VStack {
@@ -200,7 +200,7 @@ struct ShowExplainView: View {
                         Divider().background(Color.gray)
                         
                         Divider().background(Color.gray)
-                        AppCardView(imageName: "bodycam", appName: "BODYCam", appDescription: "Record videos effortlessly and discreetly.", appURL: "https://apps.apple.com/id/app/b0dycam/id6496689003")
+                        AppCardView(imageName: "takemedication", appName: "Take Medication", appDescription: "Just press any of the 24 buttons, each representing an hour of the day, and you'll get timely reminders to take your medication. It's easy, quick, and ensures you never miss a dose!", appURL: "https://apps.apple.com/id/app/take-medication/id6736924598")
                         Divider().background(Color.gray)
 
                         AppCardView(imageName: "timetell", appName: "TimeTell", appDescription: "Announce the time every 30 seconds, no more guessing and checking your watch, for time-sensitive tasks.", appURL: "https://apps.apple.com/id/app/loopspeak/id6473384030")
@@ -257,9 +257,14 @@ struct ShowExplainView: View {
                 Button("Close") {
                     onConfirm()
                 }
-                .font(.title)
+                .frame(maxWidth: .infinity)
                 .padding()
-                .cornerRadius(25.0)
+                .background(Color.blue)
+                .foregroundColor(.white)
+                .font(.title3.bold())
+                .cornerRadius(10)
+                .padding()
+                .shadow(color: Color.white.opacity(12), radius: 3, x: 3, y: 3)
             }
             .padding()
             .cornerRadius(15.0)
